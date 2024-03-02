@@ -2,7 +2,7 @@ name: github-actions
 on:
   push:
     branches:
-      - main
+      - master
   repository_dispatch:
     type:
       - submit-request
