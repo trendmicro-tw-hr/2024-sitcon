@@ -1,0 +1,18 @@
+{
+  "start": "Start!",
+  "startAgain": "Remind you that you have already filled it out!",
+  "giveUp": "Give up the Lottery",
+  "previous": "Previous",
+  "next": "Next",
+  "complete": "Complete",
+  "submit": "Submit",
+  "addTrender": "Add a Trender",
+  "removeTrender": "Remove it",
+  "multipleChoice": "multiple choice",
+  "maxItem": "max {{max}} item(s)",
+  "othersLabel": "Others",
+  "othersPlaceholder": "other1, other2, other3...",
+  "othersDescription": "Use , to separate your answers",
+  "placeholder": "Input your answers",
+  "switchLanguage": "中文"
+}

@@ -1,0 +1,78 @@
+title: 2023-thanksgiving-day
+disable: false
+enableI18n: false
+questionnaires:
+  # - question: 問題
+  #   description: 問題描述
+  #   type: radio/checkbox/textarea/inputList
+  #   max: 最大數量 (checkbox and inputList only, 0 = 不限)
+  #   placeholder: 說明 (textarea only)
+  #   otherAnswer: 是否有其他選項 [false/true] (default: false)
+  #   maxIgnoresOtherAnswer: 是否忽略其他選項的最大數量限制 [false/true] (checkbox only, default: false)
+  #   answers:
+  #     - name: 答案1
+  #       description: 答案1的描述
+  #       value: 答案1的值 (預設和 name 值一樣)
+  #     - name: 答案2
+  #       description: 答案2的描述
+  #       value: 答案2的值
+  #     - name: 答案3
+  #       description: 答案3的描述
+  #       value: 答案3的值
+  #     - name: 答案4
+  #       description: 答案4的描述
+  #       value: 答案4的值
+  #   help: 說明
+  #     title: 標題
+  #     description: 內容
+  #     Chart:
+  #       labels:
+  #         - 答案1
+  #       data:
+  #         - 值1
+  #   allowEmptyValue: 允許空值送出 [false/true] (default: false)
+  #   answerUpperCase: 轉換首字大寫 [false/true] (default: false)
+
+  - question: 您擅長的程式語言為何?
+    type: checkbox
+    otherAnswer: true
+    max: 0
+    answers:
+      - name: Python
+      - name: Go
+      - name: JavaScript
+      - name: .Net
+      - name: C/C++
+      - name: Java
+      - name: PHP
+
+  - question: 您有興趣的技術領域?
+    type: textarea
+
+  - question: 下列有關於趨勢科技的冷知識，何者為非？
+    type: radio
+    answers:
+      - name: 有超多社團跟福利，喝不完的一元可樂，工程師還會穿拖鞋去開會
+      - name: 日本財經雜誌評比為日本市值Top30的企業，年營業額已達到20.2億美元規模，是全世界前10大資安軟體公司
+      - name: 趨勢科技全球銷售佔營業額最高的產品是PC-cillin
+      - name: 我們的產品守護50 多萬家企業客戶，全球前十大電信公司有八家是趨勢科技客戶
+      - name: 趨勢全球有55個國家有分佈據點，員工人數達7,000人，研發中心在台灣
+    help:
+      title: 你知道嗎？
+      description:
+        選項一：趨勢科技沒有dress code，到職第一天就會發給新進同仁一雙拖鞋象徵無拘束的工作環境，不只可以穿拖鞋，就算是想打赤腳也可以!!<br>
+        選項二：日本雜誌估計趨勢目前市值大概是2,428億日圓，排名約跟三菱電機市值相當!!<br>
+        選項三、四：趨勢科技產品覆蓋率除了個人使用者外，最大的客戶來自於全世界的中大型企業，給企業端使用的資安解決方案(Vision One) 約佔年營業額70%以上!<br>
+        選項五：趨勢科技在美國成立，在日本上市，創辦人來自台灣，同時台灣也是趨勢的全球軟體研發中心，有1,700名員工共同開發出世界級的資安產品~<br>
+
+  - question: 如果將來有機會加入趨勢，關於趨勢的哪些部分是你喜歡或想追求的呢？
+    type: radio
+    answers:
+      - name: 工作與生活的平衡
+        description: 無論喜歡與同事們面對面相處的感覺，或是偶而在家上班保有彈性，趨勢皆能滿足你的期望！我們目前採用混合式辦公模式，提供優於勞基法的休假天數，多樣化的社團，滿足趨勢人各方面"做最好的自己"的渴望!!
+      - name: 職涯成長機會
+        description: 雲端、OpenAI、DevOps開發流程...，在這裡你有許多機會接觸最熱門的技術，也透過跨國合作、協同開發提升自己的經驗值。工作以外，趨勢也鼓勵員工自主學習，有讀書會、技術講座等進修活動的支援與補助。常舉辦跨部門黑客松競賽，優勝者還有機會出國比賽、與全球趨勢人同場較勁!!
+      - name: 同事主管好相處
+        description: 你知道嗎？在趨勢，從工程師到CEO僅跨越四個層級！我們希望透過如此扁平的組織結構，讓每個人的聲音都能夠被聽到。這樣的文化也滲透進公司大大小小的團隊，定期舉辦溝通會議、完善新人訓練，到各種自發的sharing，都已經是趨勢人的日常了。
+      - name: 優質的公司福利
+        description: 多樣化的社團、開放式的辦公環境、1元飲料機...不只想像得到的福利，還有很多你一定從未想過的福利正在等你來發掘！
