@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/2024-sitcon/static/css/main.243521e8.css",
-    "main.js": "/2024-sitcon/static/js/main.b5b7f0fd.js",
+    "main.js": "/2024-sitcon/static/js/main.b19e4022.js",
     "index.html": "/2024-sitcon/index.html",
     "static/media/getFetch.cjs": "/2024-sitcon/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.243521e8.css.map": "/2024-sitcon/static/css/main.243521e8.css.map",
-    "main.b5b7f0fd.js.map": "/2024-sitcon/static/js/main.b5b7f0fd.js.map"
+    "main.b19e4022.js.map": "/2024-sitcon/static/js/main.b19e4022.js.map"
   },
   "entrypoints": [
     "static/css/main.243521e8.css",
-    "static/js/main.b5b7f0fd.js"
+    "static/js/main.b19e4022.js"
   ]
 }
