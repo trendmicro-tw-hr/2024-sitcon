@@ -1,4 +1,4 @@
 export const dispatchesUrl =
-  "https://api.github.com/repos/trendmicro-tw-hr/questionnaires/dispatches";
+  "https://api.github.com/repos/trendmicro-tw-hr/2024-sitcon/dispatches";
 export const bearer =
-  "U2FsdGVkX195MBfjRB3n3A+jvrvhf4vOf35h41lEI/fvwHsjN/U55coaj+0ZG8YjrrFTE5yViaSAfLGaAfstPJAJZLm2sehIoLBJZMAO1Bsqgl/tNXni7eIp5goVlQ7ML8TCLaKflzeu9Uy9YDscPg==";
+  "U2FsdGVkX18j2hcqsymTiQKYoUvd9OENhdhAVB5rKHDEFYboG2oIPN8pvCp7ZozjEAOK1KemfznPMtxVWD8YryAdztUyCPT29h/G/8vzaddmUSxXMFvP3uU5aS5EMuyrGf2hnsv/Gyu3isKsZq0FaQ==";
