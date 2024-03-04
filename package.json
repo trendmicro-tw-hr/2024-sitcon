@@ -1,8 +1,8 @@
 {
-  "name": "questionnaires",
+  "name": "2024-sitcon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://trend-andy-pan.github.io/questionnaires/#",
+  "homepage": "https://trendmicro-tw-hr.github.io/2024-sitcon/#",
   "dependencies": {
     "@babel/traverse": "^7.23.2",
     "@nextui-org/react": "^2.2.2",
