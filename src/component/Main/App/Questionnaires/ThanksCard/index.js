@@ -167,7 +167,7 @@ export default function ThanksCard({ step }) {
               key="getInfo"
               size="lg"
             >
-              我同意收到實習與趨勢相關資訊
+              我同意
             </Checkbox>
 
           )}

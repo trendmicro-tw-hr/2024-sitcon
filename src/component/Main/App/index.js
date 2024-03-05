@@ -159,6 +159,8 @@ export default function App() {
       { key }
     );
 
+    window.open('https://www.trendmicro.com/zh_tw/business.html', '_blank');
+
     setSubmitLoading(false);
     handleShowResult();
   };
@@ -182,10 +184,13 @@ export default function App() {
     const answer = personalWatch([
       "name",
       "email",
-      "company",
-      "getRecruitInfo",
+      "tel",
+      "school",
+      "department",
+      "grade",
+      "getInfo",
     ]);
-    return answer.filter((value) => value !== "").length < 4;
+    return answer.filter((value) => value !== "" && value !== false).length < 7;
   };
 
   const renderNextButton = () => {
@@ -246,7 +251,7 @@ export default function App() {
             isLoading={submitLoading}
           >
             <Trans i18nKey="complete" ns="app">
-              登記抽 Kudos Points 200點
+              登記抽獎
             </Trans>
           </Button>
         );
@@ -338,19 +343,6 @@ export default function App() {
               </Trans>
             </Button>
           ) : <div />}
-          {step === maxStep && step >= 2 ? (
-            <>
-              <Button
-                color="danger"
-                variant="ghost"
-                onClick={() => handleShowResult()}
-              >
-                <Trans i18nKey="giveUp" ns="app">
-                  放棄抽獎
-                </Trans>
-              </Button>
-            </>
-          ) : null}
           {loading ? (
             <Button color="primary" variant="shadow" isDisabled isLoading>
               <Trans i18nKey="start" ns="app">
