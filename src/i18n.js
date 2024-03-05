@@ -12,7 +12,8 @@ i18n
       loadPath: `${process.env.PUBLIC_URL}/locales/{{lng}}/{{ns}}.json`,
     },
     detection: {
-      order: ["querystring", "navigator"],
+      // order: ["querystring", "navigator"],
+      order: ["querystring"],
     },
     defaultNS: "app",
     lowerCaseLng: true,

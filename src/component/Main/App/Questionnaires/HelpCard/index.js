@@ -15,14 +15,15 @@ import QuestionnairesContext from "../../../../../context/questionnaires";
 
 export default function HelpCard({ step, index }) {
   const {
-    ctxValue: { questions, step: currentStep },
+    ctxValue: { questions, step: currentStep, questionsForm: { getValues } },
     setQuestionNo,
     setNextText,
   } = useContext(QuestionnairesContext);
   const {
     title = "你知道嗎",
+    answer = "",
     description = "",
-    Chart,
+    chart,
   } = questions[index]?.help ?? {};
 
   useEffect(() => {
@@ -45,14 +46,14 @@ export default function HelpCard({ step, index }) {
       <Divider />
       <CardBody>
         <p dangerouslySetInnerHTML={{ __html: description }} />
-        {Chart ? (
+        {chart && (
           <Doughnut
             className="mt-5"
             data={{
-              labels: Chart.labels,
+              labels: chart.labels,
               datasets: [
                 {
-                  data: Chart.data,
+                  data: chart.data,
                 },
               ],
             }}
@@ -68,7 +69,27 @@ export default function HelpCard({ step, index }) {
               },
             }}
           />
-        ) : null}
+        )}
+        {answer && (
+          <>
+            <br />
+            <Divider />
+            <br />
+            {getValues(`answer-${index}`) === answer
+              ? <p className="text-green-600">恭喜你答對了！</p>
+              : <>
+                <p>
+                  <span>您的選擇為：</span>
+                  <span className="text-red-600">{getValues(`answer-${index}`)}</span>
+                </p>
+                <p>
+                  <span>正確答案為：</span>
+                  <span dangerouslySetInnerHTML={{ __html: answer }} className="text-green-600" />
+                </p>
+              </>
+            }
+          </>
+        )}
       </CardBody>
     </Card>
   );
