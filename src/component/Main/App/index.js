@@ -254,7 +254,7 @@ export default function App() {
             isLoading={submitLoading}
           >
             <Trans i18nKey="complete" ns="app">
-              登記抽獎
+              繼續完成 IG 粉絲頁限動分享任務
             </Trans>
           </Button>
         );

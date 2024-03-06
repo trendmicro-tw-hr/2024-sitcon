@@ -1,5 +1,13 @@
 import React, { useContext, useEffect } from "react";
-import { Card, CardBody, Divider, Input, CardHeader, Checkbox, ScrollShadow } from "@nextui-org/react";
+import {
+  Card,
+  CardBody,
+  Divider,
+  Input,
+  CardHeader,
+  Checkbox,
+  ScrollShadow,
+} from "@nextui-org/react";
 import { BsChatTextFill } from "react-icons/bs";
 import { FaUserAlt, FaPhoneAlt, FaSchool } from "react-icons/fa";
 import { HiOutlineMailOpen } from "react-icons/hi";
@@ -86,7 +94,6 @@ export default function ThanksCard({ step }) {
                 <FaPhoneAlt className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
               }
             />
-
           )}
         />
 
@@ -107,7 +114,6 @@ export default function ThanksCard({ step }) {
                 <FaSchool className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
               }
             />
-
           )}
         />
 
@@ -128,7 +134,6 @@ export default function ThanksCard({ step }) {
                 <MdSchool className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
               }
             />
-
           )}
         />
 
@@ -149,7 +154,6 @@ export default function ThanksCard({ step }) {
                 <MdGrade className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
               }
             />
-
           )}
         />
         <p>個人資料同意書</p>
@@ -161,15 +165,9 @@ export default function ThanksCard({ step }) {
           control={control}
           defaultValue={""}
           render={({ field }) => (
-            <Checkbox
-              {...field}
-              className="flex-1"
-              key="getInfo"
-              size="lg"
-            >
+            <Checkbox {...field} className="flex-1" key="getInfo" size="lg">
               我同意
             </Checkbox>
-
           )}
         />
       </>
@@ -181,6 +179,7 @@ export default function ThanksCard({ step }) {
         <BsChatTextFill className="w-10 h-10" />
         <div className="flex flex-col">
           <p className="text-2xl">{t("header-1")}</p>
+          <p className="text-2xl">{t("header-2")}</p>
         </div>
       </CardHeader>
       <Divider />

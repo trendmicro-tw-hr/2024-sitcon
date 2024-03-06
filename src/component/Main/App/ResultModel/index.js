@@ -78,16 +78,18 @@ export default function ResultModel({ isOpen, onOpenChange }) {
                 })}
               </Accordion>
             </ModalBody>
-            <ModalFooter className="justify-center">
-              <p className="text-2xl text-TrendMicro">
+            <ModalFooter className="justify-center flex flex-col">
+              <p className="text-2xl text-TrendMicro text-center">
                 {t("footer", { ns: "result" })}
               </p>
+              <br />
               <a
-                href="https://www.instagram.com/trendcareerstw?igsh=OGQ5ZDc2ODk2ZA=="
                 target="_blank"
-                className="text-2xl"
+                rel="noreferrer"
+                href="https://www.instagram.com/trendcareerstw?igsh=OGQ5ZDc2ODk2ZA=="
+                className="text-2xl text-center"
               >
-                記得到 IG 分享文章完成任務喔！
+                別忘了前往趨勢IG粉絲頁，繼續完成限動分享任務兌換扭蛋乙次！
               </a>
             </ModalFooter>
           </>
