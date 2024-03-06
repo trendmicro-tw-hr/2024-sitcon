@@ -159,7 +159,10 @@ export default function App() {
       { key }
     );
 
-    window.open('https://www.trendmicro.com/zh_tw/business.html', '_blank');
+    window.open(
+      "https://www.instagram.com/trendcareerstw?igsh=OGQ5ZDc2ODk2ZA==",
+      "_blank"
+    );
 
     setSubmitLoading(false);
     handleShowResult();
@@ -277,8 +280,9 @@ export default function App() {
       <Navbar className="flex max-md:px-3 navbar">
         <NavbarBrand className="flex-none max-w-[150px]">
           <div
-            className={`${(step >= 1 && "max-sm:w-[35px]") || ""
-              } max-sm:relative overflow-hidden logo-div`}
+            className={`${
+              (step >= 1 && "max-sm:w-[35px]") || ""
+            } max-sm:relative overflow-hidden logo-div`}
           >
             <Image
               width={150}
@@ -316,8 +320,9 @@ export default function App() {
       </article>
       <footer className="flex flex-col px-6">
         <div
-          className={`flex w-full ${step === 1 ? "justify-end" : "justify-between"
-            } py-6 max-md:py-3`}
+          className={`flex w-full ${
+            step === 1 ? "justify-end" : "justify-between"
+          } py-6 max-md:py-3`}
         >
           {step !== maxStep && step >= 2 ? (
             <Button
@@ -342,7 +347,9 @@ export default function App() {
                 切換語言
               </Trans>
             </Button>
-          ) : <div />}
+          ) : (
+            <div />
+          )}
           {loading ? (
             <Button color="primary" variant="shadow" isDisabled isLoading>
               <Trans i18nKey="start" ns="app">

@@ -82,6 +82,13 @@ export default function ResultModel({ isOpen, onOpenChange }) {
               <p className="text-2xl text-TrendMicro">
                 {t("footer", { ns: "result" })}
               </p>
+              <a
+                href="https://www.instagram.com/trendcareerstw?igsh=OGQ5ZDc2ODk2ZA=="
+                target="_blank"
+                className="text-2xl"
+              >
+                記得到 IG 分享文章完成任務喔！
+              </a>
             </ModalFooter>
           </>
         )}
