@@ -87,7 +87,7 @@ export default function ResultModel({ isOpen, onOpenChange }) {
                 target="_blank"
                 rel="noreferrer"
                 href="https://www.instagram.com/trendcareerstw?igsh=OGQ5ZDc2ODk2ZA=="
-                className="text-2xl text-center"
+                className="text-2xl text-center text-blue-600"
               >
                 別忘了前往趨勢IG粉絲頁，繼續完成限動分享任務兌換扭蛋乙次！
               </a>
