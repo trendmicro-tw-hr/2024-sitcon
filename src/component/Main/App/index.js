@@ -70,12 +70,18 @@ export default function App() {
   }, [setQuestionsForm, questionsForm, setPersonalForm, personalForm]);
 
   const handleNext = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 100);
+
     setStep(step + 1);
   };
 
   const handlePrev = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 100);
+
     setStep(step - 1);
   };
 
@@ -159,10 +165,12 @@ export default function App() {
       { key }
     );
 
-    window.open(
-      "https://www.instagram.com/trendcareerstw?igsh=OGQ5ZDc2ODk2ZA==",
-      "_blank"
-    );
+    setTimeout(() => {
+      window.open(
+        "https://www.instagram.com/trendcareerstw?igsh=OGQ5ZDc2ODk2ZA==",
+        "_blank"
+      );
+    })
 
     setSubmitLoading(false);
     handleShowResult();
@@ -280,9 +288,8 @@ export default function App() {
       <Navbar className="flex max-md:px-3 navbar">
         <NavbarBrand className="flex-none max-w-[150px]">
           <div
-            className={`${
-              (step >= 1 && "max-sm:w-[35px]") || ""
-            } max-sm:relative overflow-hidden logo-div`}
+            className={`${(step >= 1 && "max-sm:w-[35px]") || ""
+              } max-sm:relative overflow-hidden logo-div`}
           >
             <Image
               width={150}
@@ -320,9 +327,8 @@ export default function App() {
       </article>
       <footer className="flex flex-col px-6">
         <div
-          className={`flex w-full ${
-            step === 1 ? "justify-end" : "justify-between"
-          } py-6 max-md:py-3`}
+          className={`flex w-full ${step === 1 ? "justify-end" : "justify-between"
+            } py-6 max-md:py-3`}
         >
           {step !== maxStep && step >= 2 ? (
             <Button
